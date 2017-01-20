@@ -5,7 +5,6 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 gem 'rails', '~> 5.0.1'
-gem 'ruby', '~> 2.2.6'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -19,7 +18,7 @@ gem "paperclip-dropbox", ">= 1.1.7"
 gem "figaro"
 
 # group :production do
-#	gem 'pg', '0.18.4'
+# gem 'pg', '0.18.4'
 #end
 
 #group :development, :test do
@@ -49,5 +48,5 @@ end
 group :production do
 	gem 'pg', '0.18.4'
 end
-
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
